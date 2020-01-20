@@ -1,0 +1,12 @@
+<h1>Welcome#sample</h1>
+<p>Find me in app/views/welcome/sample.html.erb</p>
+
+<!-- While you can retrieve data from a controller in a view, you cant send
+data from a view to a controller -->
+<%= "Message from controller: 
+	#{@controller_message}" %>
+
+
+<%= link_to("Go to Index",
+	{ :action => 'index',
+		:id => 5, :random => 'Tyler'}) %>
